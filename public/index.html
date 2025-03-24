@@ -13,15 +13,58 @@
       href="profile_image_100px^2.png"
       type="image/png"
     />
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap");
+
+      .noto-sans {
+        font-family: "Noto Sans", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 400;
+        font-style: normal;
+        font-variation-settings: "wdth" 100;
+      }
+
+      @media (prefers-color-scheme: dark) {
+        body {
+          background-color: black;
+          color: white;
+        }
+      }
+
+      body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      main {
+        max-width: 666px;
+        padding: 2rem;
+      }
+
+      p {
+        text-align: justify;
+      }
+    </style>
   </head>
   <body>
-    <p>Please visit our GitHub organization page here:</p>
-    <a href="https://github.com/committed-to-code"
-      >https://github.com/committed-to-code</a
-    >
+    <main class="noto-sans">
+      <img
+        src="profile_image_100px^2.png"
+        alt="Committed to Code profile image"
+      />
+      <h1>Committed to Code</h1>
+      <p>
+        Building software that endures, together. This organization houses
+        repositories focused on creating lasting solutions through careful
+        design, thorough testing, and a commitment to maintainability. We value
+        community contributions and a collaborative approach to long-term
+        software development.
+      </p>
+    </main>
     <script>
       document.addEventListener("DOMContentLoaded", () => {
-        window.location = "https://github.com/committed-to-code";
+        window.location.href = "https://github.com/committed-to-code";
       });
     </script>
   </body>
